@@ -72,3 +72,14 @@
     color: var(--color-gray);
   }
 }
+
+@layer components {
+  .h7 {
+    font-family: "F37 Ginger Cyrillic VF", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 28px;
+    letter-spacing: 0;
+  }
+}

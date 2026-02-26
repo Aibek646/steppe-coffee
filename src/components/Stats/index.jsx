@@ -14,7 +14,7 @@ const text =
 
 const Stats = () => {
   return (
-    <div className="flex gap-[35px] px-[80px]">
+    <div className="flex flex-col items-center xl:flex-row gap-[35px] md:px-[80px] px-[20px]">
       <div className="flex flex-col gap-[20px]">
         <Card text={text} />
         <Views

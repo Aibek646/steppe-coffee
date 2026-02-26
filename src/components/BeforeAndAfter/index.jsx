@@ -4,7 +4,7 @@ import AfterImg from "../../assets/afterImg.png";
 
 const BeforeAndAfter = () => {
   return (
-    <div className="flex gap-[24px] px-[24px]   ">
+    <div className="flex flex-col 2xl:flex-row gap-[24px] px-[24px]   ">
       <div className="flex items-center justify-center flex-col gap-[23px]">
         <h1 className="h2">ДО</h1>
         <div className="py-[60px] px-[27.5px] border-card">

@@ -10,6 +10,10 @@ import Signs from "./components/Signs";
 import Stats from "./components/Stats";
 import Stats2 from "./components/Stats2";
 import AuthorBio from "./components/AuthorBio";
+import Desert from "./components/Desert";
+import Stickers from "./components/Stickers";
+import Results from "./components/Results";
+import SteppeCoffeImg from "./assets/file-001.png";
 
 function App() {
   return (
@@ -32,6 +36,13 @@ function App() {
         <Stats />
         <Stats2 />
         <AuthorBio />
+        <Desert />
+        <Stickers />
+        <Results />
+        <div>
+          <img src={SteppeCoffeImg} alt="SteppeCoffeImg" />
+        </div>
+        <Footer />
       </div>
     </>
   );

@@ -1,18 +1,41 @@
 import React from "react";
 import Logo from "../../assets/icons/Logo.svg?react";
 
-const Header = () => {
+const Links = () => {
   return (
-    <div className="flex items-center justify-between py-[16px]  px-[60px] absolute top-[20px] max-w-[1400px] w-full mx-auto bg-background-header sticky top-0 z-50 rounded-[40px]  ">
-      <div>
+    <>
+      <span>О нас</span>
+      <span>Услугу</span>
+      <spa1n>Проекты</spa1n>
+      <span>Шоу кейсы</span>
+    </>
+  );
+};
+
+const Header = () => {
+  const [isOpen, setIsOpen] = React.useState(false);
+
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <nav className="flex items-center justify-between py-[16px]  px-[60px] absolute top-[20px] max-w-[1400px] w-full mx-auto bg-background-header sticky top-0 z-50 rounded-[40px]">
+      <div className="lg:hidden">
+        <button onClick={toggleNavbar}>---</button>
+      </div>
+      {isOpen && (
+        <div className="flex lg:hidden flex-col items-center justify-center">
+          <Links />
+        </div>
+      )}
+      <div className="hidden lg:block">
         <Logo />
       </div>
-      <div className="flex justify-between gap-[24px]">
-        <span>О нас</span>
-        <span>Услугу</span>
-        <span>Проекты</span>
-        <span>Шоу кейсы</span>
+      <div className="hidden lg:flex justify-between gap-[24px]">
+        <Links />
       </div>
+
       <div className="flex gap-[24px]">
         <select
           className="border border-gray-600 rounded-2xl py-[4px] px-[16px]"
@@ -26,7 +49,7 @@ const Header = () => {
           Связаться с нами
         </button>
       </div>
-    </div>
+    </nav>
   );
 };
 export default Header;

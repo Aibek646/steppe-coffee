@@ -7,15 +7,15 @@ const Views = ({ views, percent, accounts, subQuantity, unsubQuantity }) => {
       <h1 className="h4 text-center">ПРОСМОТРЫ</h1>
       <p className="h9 text-center">1 Сен - 30 сен</p>
       <div>
-        <div className="flex gap-[60px] items-center">
-          <div className="w-[260px] ml-[167px] relative flex flex-col aspect-square h-[260px] rounded-full rotate-90  bg-[radial-gradient(circle,_transparent_60%,_#AC8EEF4D_61%)] ">
+        <div className="flex flex-col md:flex-row xl:flex-row 2xl:flex-row gap-[60px] items-center">
+          <div className="w-[260px] ml-[20px] min-[800px]:ml-[167px] relative flex flex-col aspect-square h-[260px] rounded-full rotate-90  bg-[radial-gradient(circle,_transparent_60%,_#AC8EEF4D_61%)] ">
             <div
               style={{
                 background: `conic-gradient(#FF00004D 0deg 200deg, transparent 200deg 360deg)
 `,
                 mask: "radial-gradient(circle, transparent 60%, black 61%)",
               }}
-              className="w-[260px] left-[-167px]  ml-[167px] absolute flex flex-col aspect-square h-[260px] rounded-full rotate-[-88deg]  bg-[radial-gradient(circle,_transparent_60%,_#FF000033_61%)]"
+              className="w-[260px] left-[0px]  ml-[0px] md:left-[-167px] md:ml-[167px]  absolute flex flex-col aspect-square h-[260px] rounded-full rotate-[-88deg]  bg-[radial-gradient(circle,_transparent_60%,_#FF000033_61%)]"
             ></div>
             <p className="rotate-270 absolute top-[115px] left-[97px]  h9">
               Просмотры

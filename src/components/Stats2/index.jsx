@@ -9,7 +9,7 @@ const text =
 
 const StatsTwo = () => {
   return (
-    <div className="flex gap-[24px] px-[80px]">
+    <div className="flex flex-col xl:flex-row gap-[24px] md:px-[80px] px-[20px]">
       <Card text={text} title="В ОКТЯБРЕ" width="max-w-[411px]" />
       <Views
         views={41.982}

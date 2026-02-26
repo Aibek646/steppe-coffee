@@ -2,7 +2,7 @@ import React from "react";
 
 const InfoCard = () => {
   return (
-    <div className="max-w-[845px] px-[24px] py-[60px] max-h-[316px] flex flex-col gap-[16px] border-card mt-[218px] ">
+    <div className="max-w-[845px] px-[24px] py-[60px] max-h-[316px] flex flex-col gap-[16px] border-card mt-0 md:mt-[218px] ">
       <p className="h4 ">STEPPE COFFEE</p>
       <p className="h9">
         Steppe Coffee – городской кофейный проект с сильным

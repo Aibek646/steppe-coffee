@@ -4,14 +4,10 @@ import CurvesImg from "../../assets/1c20342b4f4ddd0122d7afef5b13865aefdc0af3.png
 
 const InnerInterior = () => {
   return (
-    <div className="relative flex  min-h-[1018.45px] ">
+    <div className="relative">
+      <img className=" border-card " src={InnerInterImg} alt="firstImage" />
       <img
-        className="absolute z-10 border-card min-h-[1018.45px]"
-        src={InnerInterImg}
-        alt="firstImage"
-      />
-      <img
-        className="absolute z-20 border-card"
+        className=" border-card absolute top-0 left-0"
         src={CurvesImg}
         alt="secondImage"
       />
