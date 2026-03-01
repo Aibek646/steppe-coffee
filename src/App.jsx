@@ -18,11 +18,15 @@ import SteppeCoffeImg from "./assets/file-001.png";
 function App() {
   return (
     <>
-      <div className=" mb-[40px] relative bg-[#FAF100] max-w-[1440px] rounded-b-[40px] w-full mx-auto">
-        <Header />
+      <Header />
+      <div className=" mb-[40px] relative bg-[#FAF100] max-w-[1440px] -mt-[130px] rounded-b-[40px] w-full mx-auto">
         <div className="flex flex-col items-center justify-center h-[850px]">
           <div className="flex flex-col items-center">
-            <img src={SteppeImg} alt="steppeImg" />
+            <img
+              src={SteppeImg}
+              className="rotate-img-smooth"
+              alt="steppeImg"
+            />
             <img src={SteppeTxtImg} alt="steppeTxtImg" />
           </div>
         </div>

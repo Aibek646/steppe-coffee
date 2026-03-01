@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import AuthorImg from "../../assets/file-007.png";
 import MovieNightImg from "../../assets/Property 1=Default.png";
 import Card from "../Card";
@@ -10,32 +10,11 @@ const text =
   "л диагностическим: мы протестировали форматы и в" +
   "ыявили, что наибольшую вовлеченность дают визуальные посты и контент с офлайн-жизнью кофейни .";
 
-{
-  /*<img*/
-}
-{
-  /*  className="border-card max-w-[519px] w-full object-cover duration-500 transition-all"*/
-}
-{
-  /*  src={images[index]}*/
-}
-{
-  /*  alt="Author-Image"*/
-}
-{
-  /*/>*/
-}
-
+import { useAutoIndex } from "../../customHook/useAutoIndex.js";
 const images = [AuthorImg, MovieNightImg];
 
 const AuthorBio = () => {
-  const [index1, setIndex] = React.useState(0);
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prev) => (prev + 1) % images.length);
-    }, 2000);
-    return () => clearInterval(interval);
-  }, []);
+  const index = useAutoIndex(images.length, 2000);
 
   return (
     <div className="flex flex-col xl:flex-row gap-[24px] md:px-[80px] px-[20px] items-center ">
@@ -45,7 +24,7 @@ const AuthorBio = () => {
             src={img}
             key={i}
             alt="img"
-            className={` w-full max-w-[519px] h-full absolute inset-0  object-contain  transition-opacity duration-1000 ease-in-out ${i === index1 ? "opacity-1500" : "opacity-0"}`}
+            className={` w-full max-w-[519px] h-full absolute inset-0  object-contain  transition-opacity duration-1000 ease-in-out ${i === index ? "opacity-1500" : "opacity-0"}`}
           />
         ))}
       </div>

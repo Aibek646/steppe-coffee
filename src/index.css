@@ -54,7 +54,7 @@
 
 @layer components {
   .border-card {
-    border: 1px solid #ffffff33;
+    border: 1px solid #ffffff;
     border-radius: 20px;
     box-shadow: 0 4px 140.7px 0 #c0c7f7;
     backdrop-filter: blur(0px);
@@ -158,4 +158,53 @@
 .step-spin {
   animation: step-spin-inertia 8s ease-in-out infinite;
   transform-origin: center;
+}
+
+@keyframes customRotateSmooth {
+  0% {
+    transform: rotate(0deg);
+  }
+  7% {
+    transform: rotate(15deg);
+  }
+  14% {
+    transform: rotate(45deg);
+  }
+  21% {
+    transform: rotate(75deg);
+  }
+  28% {
+    transform: rotate(105deg);
+  }
+  35% {
+    transform: rotate(135deg);
+  }
+  42% {
+    transform: rotate(165deg);
+  }
+  50% {
+    transform: rotate(196.37deg);
+  }
+  58% {
+    transform: rotate(225deg);
+  }
+  65% {
+    transform: rotate(255deg);
+  }
+  72% {
+    transform: rotate(285deg);
+  }
+  79% {
+    transform: rotate(315deg);
+  }
+  86% {
+    transform: rotate(345deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-img-smooth {
+  animation: customRotateSmooth 3.4s ease-out infinite;
 }

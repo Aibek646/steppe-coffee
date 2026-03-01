@@ -4,6 +4,7 @@ import DesertImg2 from "../../assets/Property 1=Group 1.png";
 import DesertImg3 from "../../assets/Property 1=Group 2.png";
 import DesertImg4 from "../../assets/Property 1=Group 3.png";
 import DesertImg5 from "../../assets/Property 1=Group 4.png";
+import { useAutoIndex } from "../../customHook/useAutoIndex.js";
 
 const text =
   "Дополнительно мы занимались дизайном " +
@@ -15,13 +16,7 @@ const text =
 const images = [DesertImg2, DesertImg3, DesertImg4, DesertImg5];
 
 const Desert = () => {
-  const [index, setIndex] = React.useState(0);
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prev) => (prev + 1) % images.length);
-    }, 2000);
-    return () => clearInterval(interval);
-  }, []);
+  const index = useAutoIndex(images.length, 2000);
 
   return (
     <div className="flex flex-col xl:flex-row gap-[24px] items-center justify-around   md:px-[80px] px-[20px]  ">

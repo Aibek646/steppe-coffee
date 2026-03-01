@@ -3,7 +3,7 @@ import IphoneImg from "../../assets/901.png";
 import Card from "../DesignInterior/Card";
 import { CardConfig } from "../DesignInterior/Config";
 import DesignImg from "../../assets/steppe-1.png";
-// max-w-[519px]
+
 
 const DesignInterior = () => {
   return (

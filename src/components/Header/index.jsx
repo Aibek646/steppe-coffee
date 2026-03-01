@@ -21,7 +21,7 @@ const Header = () => {
   };
 
   return (
-    <nav className="flex items-center justify-between py-[16px]  px-[60px] absolute top-[20px] max-w-[1400px] w-full mx-auto bg-background-header sticky top-0 z-50 rounded-[40px]">
+    <nav className="flex items-center justify-between py-[16px] px-[20px] md:px-[60px]  max-w-[1400px] w-full mx-auto bg-background-header sticky top-[20px] z-50 rounded-[40px]">
       <div className="lg:hidden">
         <button className="hover:cursor-pointer" onClick={toggleNavbar}>
           <BurgerIcon />
@@ -52,7 +52,7 @@ const Header = () => {
             eng
           </option>
         </select>
-        <button className="bg-[#FA4C19] py-[8px] px-[20px]  text-[#FFFCF0] font-normal rounded-[20px] hover:cursor-pointer ">
+        <button className="bg-[#FA4C19] py-[8px] px-[10px] md:px-[20px]  text-[#FFFCF0] font-normal rounded-[20px] hover:cursor-pointer ">
           Связаться с нами
         </button>
       </div>
