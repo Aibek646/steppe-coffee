@@ -9,7 +9,7 @@ const Stickers = () => {
         <img src={StickersImg} alt="sitckers-img" />
       </div>
       <div className="bg-[#FBE400] max-w-[809px] w-full r flex justify-center items-center border-card ">
-        <img src={StickersImages} alt="StickersImages" />
+        <img src={StickersImages} className="step-spin" alt="StickersImages" />
       </div>
     </div>
   );
